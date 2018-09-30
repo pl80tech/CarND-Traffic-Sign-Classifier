@@ -29,7 +29,9 @@ https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1a]: ./output_images/train_data.jpg "Training data"
+[image1b]: ./output_images/valid_data.jpg "Validation data"
+[image1c]: ./output_images/test_data.jpg "Test data"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -65,9 +67,15 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing the number of examples/samples per each class/label on each dataset (training, validation, test).
 
-![alt text][image1]
+* Red: training data
+* Green: validation data
+* Blue: test data
+
+<img src="output_images/train_data.jpg" width="280" title="Training data"/>
+<img src="output_images/valid_data.jpg" width="280" title="Validation data"/>
+<img src="output_images/test_data.jpg" width="280" title="Test data"/>
 
 ### Design and Test a Model Architecture
 
