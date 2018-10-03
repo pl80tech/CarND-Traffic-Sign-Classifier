@@ -69,13 +69,14 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the number of examples/samples per each class/label on each dataset (training, validation, test).
 
-* Red: training data
-* Green: validation data
-* Blue: test data
+* Training data (*Red*)
+<img src="output_images/train_data.jpg" title="Training data"/>
 
-<img src="output_images/train_data.jpg" width="280" title="Training data"/>
-<img src="output_images/valid_data.jpg" width="280" title="Validation data"/>
-<img src="output_images/test_data.jpg" width="280" title="Test data"/>
+* Validation data (*Green*)
+<img src="output_images/valid_data.jpg" title="Validation data"/>
+
+* Test data (*Blue*)
+<img src="output_images/test_data.jpg" title="Test data"/>
 
 ### Design and Test a Model Architecture
 
