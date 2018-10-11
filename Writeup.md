@@ -123,13 +123,25 @@ My final model consisted of the following layers:
 
 Here are the images that show tuning result with different model & hyperparameters:
 
+* Training with different preprocessing method
+
+<img src="output_images/valid_acc_with_different_preprocess.jpg" title="Training result"/>
+
+* Training with different learning rate
+
 <img src="output_images/valid_acc_with_different_rate.jpg" title="Training result"/>
 
+* Training with different batch size
+
 <img src="output_images/valid_acc_with_different_batchsize.jpg" title="Training result"/>
+
+* Training with different model (batch size: 64 & 32)
 
 <img src="output_images/valid_acc_with_different_model.jpg" title="Training result"/>
 
 <img src="output_images/valid_acc_with_different_model_b32.jpg" title="Training result"/>
+
+* Training with different model using more data (batch size: 64 & 32)
 
 <img src="output_images/valid_acc_with_different_model_b32_moredata.jpg" title="Training result"/>
 
