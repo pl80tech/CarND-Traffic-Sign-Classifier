@@ -193,7 +193,7 @@ Here are the results of the prediction:
 | End of speed limit (80km/h)	| Speed limit (120km/h)			|Wrong       |
 | Turn right ahead				| Turn right ahead     			|Correct     |
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 89.6%. The predicted label is "8" while the correct label is "6". As shown in the histogram, the number of training data for label "6" is fewer than for other labels. It may be one of the potential point for further improvement.
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 91.4%. The predicted label is "8" while the correct label is "6". As shown in the histogram, the number of training data for label "6" is fewer than for other labels. It may be one of the potential point for further improvement.
 
 *Note*: I couldn't find the correct labels for each test image on the web so I created the labels for above comparison based on the judgement by my eye. The 4th image is actually not clear enough to judge so the prediction by the model may be correct.
 
