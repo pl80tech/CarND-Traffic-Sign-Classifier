@@ -93,11 +93,7 @@ I implemented below preprocessing methods in preprocess() for each image & prepr
 
 As an example, here are the preprocessed images of a training image with index #500 (method 1 ~ method 5, respectively):
 
-<img src="output_images/preprocessed_method_1.jpg" width=150 title="Method 1"/>
-<img src="output_images/preprocessed_method_2.jpg" width=150 title="Method 2"/>
-<img src="output_images/preprocessed_method_3.jpg" width=150 title="Method 3"/>
-<img src="output_images/preprocessed_method_4.jpg" width=150 title="Method 4"/>
-<img src="output_images/preprocessed_method_5.jpg" width=150 title="Method 5"/>
+<img src="output_images/preprocessed_method_1.jpg" width=150 title="Method 1"/> <img src="output_images/preprocessed_method_2.jpg" width=150 title="Method 2"/> <img src="output_images/preprocessed_method_3.jpg" width=150 title="Method 3"/> <img src="output_images/preprocessed_method_4.jpg" width=150 title="Method 4"/> <img src="output_images/preprocessed_method_5.jpg" width=150 title="Method 5"/>
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
@@ -197,20 +193,57 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in below sections in [project file](https://github.com/pl80tech/CarND-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+* Predict the Sign Type for Each Image
+* Analyze Performance
+* Output Top 5 Softmax Probabilities For Each Image Found on the Web
+
+Here are the top five softmax proabilities for each image calculated by the model. The result is picked from project file.
+
+```python
+Image #1
+Top 5 softmax probabilities
+[  1.00000000e+00   1.34103232e-19   0.00000000e+00   0.00000000e+00   0.00000000e+00]
+Correspondent labels
+[3 5 0 1 2]
+
+Image #2
+Top 5 softmax probabilities
+[  1.00000000e+00   5.41257594e-10   1.28611076e-12   1.55874513e-13   1.25619757e-13]
+Correspondent labels
+[31 23 15 29 17]
+
+Image #3
+Top 5 softmax probabilities
+[ 1.  0.  0.  0.  0.]
+Correspondent labels
+[9 0 1 2 3]
+
+Image #4
+Top 5 softmax probabilities
+[  6.16894305e-01   3.83105576e-01   3.76517875e-08   4.30486580e-09   2.39555265e-09]
+Correspondent labels
+[ 8  7  9 16  1]
+
+Image #5
+Top 5 softmax probabilities
+[ 1.  0.  0.  0.  0.]
+Correspondent labels
+[33  0  1  2  3]
+```
+
+For the 4th image (label 6), the model is only 61.7% confident about its prediction (label 8). The top five soft max probabilities for image #4 are as follows:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 0.616894     			| 8 - Speed limit (120km/h)						| 
+| 0.383106 				| 7 - Speed limit (100km/h)						|
+| 3.76518e-08			| 9 - No passing : 3.76518e-08					|
+| 4.30487e-09  			| 16 - Vehicles over 3.5 metric tons prohibited	|
+| 2.39555e-09		    | 1 - Speed limit (30km/h)						|
 
-
-For the second image ... 
+For other images, the max probability is very near to 1.0 which means the model is nearly 100% confident about the predicted result.
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
