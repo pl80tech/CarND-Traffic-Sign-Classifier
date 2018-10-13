@@ -128,18 +128,30 @@ I created the function pipeline() to train the defined models with multiple sett
 Here are the images that show the training results with different settings & hyperparameters:
 
 * Training with different learning rate
-
+ 
+ The result with learning rate = 0.001 was stable and better than other learning rate.
+ 
 <img src="output_images/valid_acc_vs_different_rate.jpg" title="Accuracy vs rate"/>
 
 * Training with different batch size
+
+ There was no much difference when using different batch size (at least when training with the defined settings & parameters) so I chose 32 as default size for further tuning.
 
 <img src="output_images/valid_acc_vs_different_batchsize.jpg" title="Accuracy vs batch size"/>
 
 * Training with different preprocessing method
 
+ Preprocessing method #6 showed better result than other preprocessing method, even reached the target validation accuracy (0.93) so I chose this method for further tuning.
+
 <img src="output_images/valid_acc_vs_different_preprocess.jpg" title="Accuracy vs preprocessing method"/>
 
+* Training with different number of epoch
+
+ As far as I observed (also shown in above training result), the validation accuracy doesn't change much after 15 epochs so I used epoch around 20 ~ 30 for further tuning.
+
 * Training with different model
+
+ Model LeNet_3 showed slightly better result than other models, even reached the target validation accuracy (0.93) so I chose this model as final solution.
 
 <img src="output_images/valid_acc_vs_different_model.jpg" title="Accuracy vs model"/>
 
