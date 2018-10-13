@@ -164,13 +164,13 @@ The fourth image might be difficult to classify because it has low quality and e
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        	|   Result   |
-|:---------------------:|:-----------------------------:|:----------:|
-| Speed limit (60km/h)  | Speed limit (60km/h)			|Correct     |
-| Wild animals crossing | Wild animals crossing 		|Correct     |
-| No passing			| No passing					|Correct     |
-| Speed limit (120km/h)	| Speed limit (80km/h)			|Wrong       |
-| Turn right ahead		| Turn right ahead     			|Correct     |
+| Image			        		|     Prediction	        	|   Result   |
+|:-----------------------------:|:-----------------------------:|:----------:|
+| Speed limit (60km/h)  		| Speed limit (60km/h)			|Correct     |
+| Wild animals crossing 		| Wild animals crossing 		|Correct     |
+| No passing					| No passing					|Correct     |
+| End of speed limit (80km/h)	| Speed limit (120km/h)			|Wrong       |
+| Turn right ahead				| Turn right ahead     			|Correct     |
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 89.6%. The predicted label is "8" while the correct label is "6". As shown in the histogram, the number of training data for label "6" is fewer than for other labels. It may be one of the potential point for further improvement.
 
