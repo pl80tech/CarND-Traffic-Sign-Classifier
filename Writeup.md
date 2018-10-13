@@ -175,11 +175,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web. I downloaded the whole dataset from following link [GTSRB_Online-Test-Images.zip](http://benchmark.ini.rub.de/Dataset/GTSRB_Online-Test-Images.zip) (Test dataset for online-competition only) and picked the first 5 images which have size 32x32x3 (to fit in my model architecture).
 
-<img src="test_images/00001.jpg" width=150 title="00001.jpg (converted from ppm file)"/>
-<img src="test_images/00013.jpg" width=150 title="00013.jpg (converted from ppm file)"/>
-<img src="test_images/00090.jpg" width=150 title="00090.jpg (converted from ppm file)"/>
-<img src="test_images/00115.jpg" width=150 title="00115.jpg (converted from ppm file)"/>
-<img src="test_images/00184.jpg" width=150 title="00184.jpg (converted from ppm file)"/>
+<img src="test_images/00001.jpg" width=150 title="00001.jpg (converted from ppm file)"/> <img src="test_images/00013.jpg" width=150 title="00013.jpg (converted from ppm file)"/> <img src="test_images/00090.jpg" width=150 title="00090.jpg (converted from ppm file)"/> <img src="test_images/00115.jpg" width=150 title="00115.jpg (converted from ppm file)"/> <img src="test_images/00184.jpg" width=150 title="00184.jpg (converted from ppm file)"/>
 
 The fourth image might be difficult to classify because it has low quality and even difficult for human eye. Other images are clearer so they may be classified correctly.
 
@@ -196,6 +192,8 @@ Here are the results of the prediction:
 | Turn right ahead		| Turn right ahead     			|Correct     |
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 89.6%. The predicted label is "8" while the correct label is "6". As shown in the histogram, the number of training data for label "6" is fewer than for other labels. It may be one of the potential point for further improvement.
+
+*Note*: I couldn't find the correct labels for each test image on the web so I created the labels for above comparison based on the judgement by my eye. The 4th image is actually not clear enough to judge so the prediction by the model may be correct.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
