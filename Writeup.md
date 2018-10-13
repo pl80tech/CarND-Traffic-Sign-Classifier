@@ -157,10 +157,19 @@ Here are the images that show the training results with different settings & hyp
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-My final model results were:
-* training set accuracy: **0.988**
-* validation set accuracy: **0.932**
-* test set accuracy: **0.914**
+Here are the main approaches I have been trying until finding the solution:
+
+* Starting with the sample LeNet model, I customized the model architecture & created the first model (LeNet_1) that can suppport input image size (32x32x3).
+* I trained LeNet_1 with various hypeparameters & preprocessing methods (#1 ~ #5) and realized that the model is underfitting - which needs to be improved.
+* I created more complicated model (LeNet_2 & LeNet_3) and generated additional training data (preprocessing method #6) to improve the underfitting.
+
+After selecting the model, preprocessing method & hyperparameters, I ran again the whole process (in section *"Training with selected parameters after tuning (Final solution)"*) which automatically stopped when validation acccuracy reached target value (0.93). Here are the accuracy of my final solution:
+
+* Training set accuracy: **0.988**
+* Validation set accuracy: **0.932**
+* Test set accuracy: **0.914**
+
+<img src="output_images/validation_accuracy_final.jpg" title="Validation accuracy of final solution"/>
 
 ### Test a Model on New Images
 
