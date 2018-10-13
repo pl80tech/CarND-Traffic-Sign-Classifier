@@ -129,33 +129,25 @@ After tuning with many parameters, I selected below model (LeNet_3) as final sol
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-Here are the images that show tuning result with different model & hyperparameters:
+I created the function pipeline() to train the defined models with multiple settings & hyperparameters like preprocessing method (#1 ~ #6), learning rate, batch size, number of epochs. I used Adam optimizer as default optimizer. I plotted the training results in project file showing validation accuracy on each epoch for each combination. 
 
-* Training with different preprocessing method
-
-<img src="output_images/valid_acc_with_different_preprocess.jpg" title="Training result"/>
+Here are the images that show the training results with different settings & hyperparameters:
 
 * Training with different learning rate
 
-<img src="output_images/valid_acc_with_different_rate.jpg" title="Training result"/>
+<img src="output_images/valid_acc_vs_different_rate.jpg" title="Accuracy vs rate"/>
 
 * Training with different batch size
 
-<img src="output_images/valid_acc_with_different_batchsize.jpg" title="Training result"/>
+<img src="output_images/valid_acc_vs_different_batchsize.jpg" title="Accuracy vs batch size"/>
 
-* Training with different model (batch size: 64 & 32)
+* Training with different preprocessing method
 
-<img src="output_images/valid_acc_with_different_model.jpg" title="Training result"/>
+<img src="output_images/valid_acc_vs_different_preprocess.jpg" title="Accuracy vs preprocessing method"/>
 
-<img src="output_images/valid_acc_with_different_model_b32.jpg" title="Training result"/>
+* Training with different model
 
-* Training with different model using more data (batch size: 64 & 32)
-
-<img src="output_images/valid_acc_with_different_model_b32_moredata.jpg" title="Training result"/>
-
-<img src="output_images/valid_acc_with_different_model_b64_moredata.jpg" title="Training result"/>
-
-<img src="output_images/valid_acc_with_different_model_moredata_pre14.jpg" title="Training result"/>
+<img src="output_images/valid_acc_vs_different_model.jpg" title="Accuracy vs model"/>
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
