@@ -171,7 +171,7 @@ If a well known architecture was chosen:
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are five German traffic signs that I found on the web. I downloaded the whole dataset from following link [GTSRB_Online-Test-Images.zip](http://benchmark.ini.rub.de/Dataset/GTSRB_Online-Test-Images.zip) (Test dataset for online-competition only) and picked the first 5 images which have size 32x32x3 (to fit in my model architecture).
 
 <img src="test_images/00001.jpg" width=150 title="00001.jpg (converted from ppm file)"/>
 <img src="test_images/00013.jpg" width=150 title="00013.jpg (converted from ppm file)"/>
@@ -179,7 +179,7 @@ Here are five German traffic signs that I found on the web:
 <img src="test_images/00115.jpg" width=150 title="00115.jpg (converted from ppm file)"/>
 <img src="test_images/00184.jpg" width=150 title="00184.jpg (converted from ppm file)"/>
 
-The first image might be difficult to classify because ...
+The fourth image might be difficult to classify because it has low quality and even difficult for human eye. Other images are clearer so they may be classified correctly.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
