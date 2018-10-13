@@ -101,27 +101,31 @@ As an example, here are the preprocessed images of a training image with index #
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-I implemented below 3 neural network architecture based on LeNet model:
+I implemented below 3 neural network architectures based on LeNet model:
 
 * LeNet_1: simple model - using the filter with size (5, 5, 3, 6) to handle 3-channel input image (32x32x3)
 * LeNet_2: broader model - using the filter with bigger size (5, 5, 3, 12) to handle more feature
 * LeNet_3: broader & deeper model - using the filter with bigger size (5, 5, 3, 12) and adding one more fully connected layer
 
-After tuning with many parameters, I selected below model as final solution. It includes the following layers:
+After tuning with many parameters, I selected below model (LeNet_3) as final solution. It includes the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
+| Layer         	 | Input size | Output size | Description/Note 			 |
+|:------------------:|:----------:|:-----------:|:--------------------------:|
+| Input         	 | 32x32x3    | -           | RGB image      			 |
+| Convolution #1     | 32x32x3 	  | 28x28x12    | 1x1 stride, valid padding  |
+| Activation		 | 28x28x12	  | 28x28x12    | Relu  					 |
+| Pooling	    	 | 28x28x12	  | 14x14x12    | Max pooling			 |
+| Convolution #2     | 14x14x12   | 10x10x25    | 1x1 stride, valid padding  |
+| Activation		 | 10x10x25	  | 10x10x25    | Relu  					 |
+| Pooling	    	 | 10x10x25	  | 5x5x25	    | Max pooling				 |
+| Flatten	    	 | 5x5x25	  | 625  	    | 							 |
+| Fully connected #1 | 625		  |	400		    |      						 |
+| Activation		 | 400		  | 400		    | Relu  					 |
+| Fully connected #2 | 400		  |	240		    |      						 |
+| Activation		 | 240		  | 240		    | Relu  					 |
+| Fully connected #3 | 240		  |	100		    |      						 |
+| Activation		 | 100		  | 100		    | Relu  					 |
+| Fully connected #4 | 100		  |	43		    | Output (logits)			 |
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
