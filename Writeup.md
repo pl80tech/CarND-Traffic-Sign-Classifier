@@ -245,7 +245,7 @@ For the 4th image (label 6), the model is only 61.7% confident about its predict
 |:---------------------:|:---------------------------------------------:| 
 | 0.616894     			| 8 - Speed limit (120km/h)						| 
 | 0.383106 				| 7 - Speed limit (100km/h)						|
-| 3.76518e-08			| 9 - No passing : 3.76518e-08					|
+| 3.76518e-08			| 9 - No passing 								|
 | 4.30487e-09  			| 16 - Vehicles over 3.5 metric tons prohibited	|
 | 2.39555e-09		    | 1 - Speed limit (30km/h)						|
 
