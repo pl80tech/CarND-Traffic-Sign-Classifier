@@ -39,11 +39,6 @@ https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project
 [image_m5]: ./output_images/preprocessed_method_5.jpg "Method 5"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -178,8 +173,11 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+<img src="test_images/00001.jpg" width=150 title="00001.jpg (converted from ppm file)"/>
+<img src="test_images/00013.jpg" width=150 title="00013.jpg (converted from ppm file)"/>
+<img src="test_images/00090.jpg" width=150 title="00090.jpg (converted from ppm file)"/>
+<img src="test_images/00115.jpg" width=150 title="00115.jpg (converted from ppm file)"/>
+<img src="test_images/00184.jpg" width=150 title="00184.jpg (converted from ppm file)"/>
 
 The first image might be difficult to classify because ...
 
