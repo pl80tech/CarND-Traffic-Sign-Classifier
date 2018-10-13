@@ -101,7 +101,13 @@ As an example, here are the preprocessed images of a training image with index #
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-My final model consisted of the following layers:
+I implemented below 3 neural network architecture based on LeNet model:
+
+* LeNet_1: simple model - using the filter with size (5, 5, 3, 6) to handle 3-channel input image (32x32x3)
+* LeNet_2: broader model - using the filter with bigger size (5, 5, 3, 12) to handle more feature
+* LeNet_3: broader & deeper model - using the filter with bigger size (5, 5, 3, 12) and adding one more fully connected layer
+
+After tuning with many parameters, I selected below model as final solution. It includes the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
