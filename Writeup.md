@@ -160,8 +160,8 @@ Here are the images that show the training results with different settings & hyp
 Here are the main approaches I have been trying until finding the solution:
 
 * Starting with the sample LeNet model, I customized the model architecture & created the first model (LeNet_1) that can suppport input image size (32x32x3).
-* I trained LeNet_1 with various hypeparameters & preprocessing methods (#1 ~ #5) and realized that the model is underfitting - which needs to be improved.
-* I created more complicated model (LeNet_2 & LeNet_3) and generated additional training data (preprocessing method #6) to improve the underfitting.
+* I trained LeNet_1 with various hypeparameters & preprocessing methods (#1 ~ #5) to find the points for further improvement.
+* I created more complicated model (LeNet_2 & LeNet_3) and generated additional training data (preprocessing method #6) to improve the validation accuracy.
 
 After selecting the model, preprocessing method & hyperparameters, I ran again the whole process (in section *"Training with selected parameters after tuning (Final solution)"*) which automatically stopped when validation acccuracy reached target value (0.93). Here are the accuracy of my final solution:
 
