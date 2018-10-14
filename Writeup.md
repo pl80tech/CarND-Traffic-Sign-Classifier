@@ -87,7 +87,7 @@ I implemented below preprocessing methods in preprocess() for each image & prepr
 * *Method 3*: change to grayscale then adjust the size (32x32x3) to fit in the model
 * *Method 4*: use Gaussian Blur (kernel size = 3) to smooth the image
 * *Method 5*: use Gaussian Blur (kernel size = 3) to smooth the image
-* *Method 6*: combine the images preprocessed by method 4 and method 1 (to double the number of training data to improve underfitting).
+* *Method 6*: combine the images preprocessed by method 4 and method 1 (to double the number of training data to improve the performance).
 
 As an example, here are the preprocessed images of a training image with index #500 (method 1 ~ method 5, respectively):
 
