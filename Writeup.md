@@ -183,19 +183,19 @@ The fourth image might be difficult to classify because it has low quality and e
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
+As shown in project file, here are the results of the prediction:
 
 | Image			        			|     Prediction	        	|   Result   |
 |:---------------------------------:|:-----------------------------:|:----------:|
 | 3 - Speed limit (60km/h) 			| 3 - Speed limit (60km/h)		|Correct     |
 | 31 - Wild animals crossing 		| 31 - Wild animals crossing 	|Correct     |
 | 9 - No passing					| 9 - No passing				|Correct     |
-| 6 - End of speed limit (80km/h)	| 8 - Speed limit (120km/h)		|Wrong       |
+| 8 - Speed limit (120km/h)			| 8 - Speed limit (120km/h)		|Correct     |
 | 33 - Turn right ahead				| 33 - Turn right ahead     	|Correct     |
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 91.4%. The predicted label is "8" while the correct label is "6".
+Although the confident level for each prediction varied from 62% to nearly 100%, the model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This result makes sense since the accuracy on the test set is 91.4% and the prediction was done on only few samples.
 
-**Note**: I couldn't find the correct labels for each test image on the web so I created the "correct labels" for above comparison based on the judgement by my eye. The 4th image is actually not clear enough to judge so the prediction by the model may be correct. If that is the case, the prediction of the model on 5 test images is 100% correct.
+**Note**: I actually couldn't find the correct labels for the test images downloaded from the web so I created the "correct labels" for above comparison based on the judgement by my eye. The 4th image is actually not clear enough to judge so it may affect the prediction result. The top 5 softmax probabilities when predicting 4th image (mentioned in below section) also shows the confident level of the prediction is not high as that of other images.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -205,7 +205,7 @@ The code for making predictions on my final model is located in below sections i
 * Analyze Performance
 * Output Top 5 Softmax Probabilities For Each Image Found on the Web
 
-Here are the top five softmax proabilities for each image calculated by the model. The result is picked from project file.
+Here are the top five softmax probabilities for each image calculated by the model. The result is picked from project file.
 
 ```python
 Image #1
