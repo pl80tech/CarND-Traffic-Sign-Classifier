@@ -177,9 +177,39 @@ After selecting the model, preprocessing method & hyperparameters, I ran again t
 
 Here are five German traffic signs that I found on the web. I downloaded the whole dataset from following link [GTSRB_Online-Test-Images.zip](http://benchmark.ini.rub.de/Dataset/GTSRB_Online-Test-Images.zip) (Test dataset for online-competition only) and picked the first 5 images which have size 32x32x3 (to fit in my model architecture).
 
-<img src="test_images/00001.jpg" width=150 title="00001.jpg (converted from ppm file)"/> <img src="test_images/00013.jpg" width=150 title="00013.jpg (converted from ppm file)"/> <img src="test_images/00090.jpg" width=150 title="00090.jpg (converted from ppm file)"/> <img src="test_images/00115.jpg" width=150 title="00115.jpg (converted from ppm file)"/> <img src="test_images/00184.jpg" width=150 title="00184.jpg (converted from ppm file)"/>
+<img src="test_images/5_German_signs.jpg" title="5 test images (German signs)"/>
 
-The fourth image might be difficult to classify because it has low quality and even difficult for human eye. Other images are clearer so they may be classified correctly.
+Here are the quality of each image and the comparison with some random training images of the same label.
+
+* Image #1 (00001.ppm, label = 3)
+
+	Although there is a part of triangle sign in the background, the main sign (60km) inside the image is not much different in terms of direction, brightness, contrast when comparing with below training images. The whole quality is quite good so the model may predict it well.
+
+<img src="output_images/train_images_label_3.jpg" title="Training images with label 3"/>
+
+* Image #2 (00013.ppm, label = 31)
+
+	The background is dark and the sign has small angle so it may be a little bit difficult to predict. However, it still has better quality (in general) when comparing with some of training images below.
+
+<img src="output_images/train_images_label_31.jpg" title="Training images with label 31"/>
+
+* Image #3 (00090.ppm, label = 9)
+
+	The sign is blur but it still has better quality then some training images below. There is a part of triangle sign above the main sign but it looks similar with one of the training image so perhaps the model may learn & classify it well.
+
+<img src="output_images/train_images_label_9.jpg" title="Training images with label 9"/>
+
+* Image #4 (00115.ppm, label = 8)
+
+	It has low quality and even difficult for human eye for prediction. However, some training images also have similar quality. The sign itselfs (Speed limit 120km/h) also looks similar with label = 7 (Speed limit 100km/h) so it may be difficult for the model to classify. The top 5 softmax probabilities also shows the confident level (62% for label 8 & 38% for label 7).
+
+<img src="output_images/train_images_label_8.jpg" title="Training images with label 8"/>
+
+* Image #5 (00184.ppm, label = 33)
+
+	The main sign (inside the image) has quite good quality like brightness, contrast and it looks similar with below training images so the model may be able to classify it well.
+
+<img src="output_images/train_images_label_33.jpg" title="Training images with label 33"/>
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
