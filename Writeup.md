@@ -162,8 +162,15 @@ Here are the main approaches I have been trying until finding the solution:
 * Starting with the sample LeNet model, I customized the model architecture & created the first model (LeNet_1) that can suppport input image size (32x32x3).
 * I trained LeNet_1 with various hypeparameters & preprocessing methods (#1 ~ #5) to find the points for further improvement.
 * I created more complicated model (LeNet_2 & LeNet_3) and generated additional training data (preprocessing method #6) to improve the validation accuracy.
+* I trained & plotted the learning curve showing the relation between training & validation accuracy vs the number of training examples to understand whether the models are overfiting or underfitting.
 
-After selecting the model, preprocessing method & hyperparameters, I ran again the whole process (in section *"Training with selected parameters after tuning (Final solution)"*) which automatically stopped when validation acccuracy reached target value (0.93). Here are the accuracy of my final solution:
+The implementation for each approach & the detail evaluation result are shown in project file and partially in section 3 above.
+
+From learning curve (below), it shows that there is a big gap between training accuracy & validation accuracy when the number of training examples is small but the gap is decreased and stable when the number of training examples is big enough. Although the model fits the training set very well (overfitting with training accuracy 0.99), it performs pretty well with validation set & test set (with accuracy > 0.9) when training with proper hyperparameters.
+
+<img src="trained_data/learning_curve_3_models.jpg" title="Learning curve of 3 models"/>
+
+I selected the model, preprocessing method & hyperparameters for final solution based on the performance in overall and the possibility that target validation accuracy (0.93) can be achived. After that, I ran again the whole process (in section *"Training with selected parameters after tuning (Final solution)"*) which automatically stopped when validation acccuracy reached target value (0.93). Here are the accuracy of my final solution:
 
 * Training set accuracy: **0.988**
 * Validation set accuracy: **0.932**
