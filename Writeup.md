@@ -6,7 +6,20 @@ This is my writeup for the project "Traffic Sign Classifier" of Self Driving Car
 
 ---
 
-**Build a Traffic Sign Recognition Project**
+## Contents
+
+* [Build a Traffic Sign Recognition Project](#Build-a-Traffic-Sign-Recognition-Project)
+* [Project code](#Project-code)
+* [Rubric Points](#Rubric-Points)
+* [Writeup / README](#Writeup-README)
+* [Data Set Summary & Exploration](#Data-Set-Summary-Exploration)
+* [Design and Test a Model Architecture](#Design-and-Test-a-Model-Architecture)
+* [Test a Model on New Images](#Test-a-Model-on-New-Images)
+* [Visualizing the Neural Network](#Visualizing-the-Neural-Network)
+
+---
+
+## Build a Traffic Sign Recognition Project
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
@@ -288,7 +301,10 @@ For the 4th image (label 6), the model is only 61.7% confident about its predict
 
 For other images, the max probability is very near to 1.0 which means the model is nearly 100% confident about the predicted result.
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+### Visualizing the Neural Network
+
+(Optional - See Step 4 of the Ipython notebook for more details)
+
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 
